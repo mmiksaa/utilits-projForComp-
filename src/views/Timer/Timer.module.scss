@@ -1,0 +1,22 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #dedede;
+  }
+
+  input {
+    background-color: #181818;
+    border: none;
+    color: #fff;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,70 @@
+.top {
+  display: flex;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    color: #181818;
+  }
+
+  //TODO: перенести повторяющийся код в отдельную папку
+
+  input[type='color'] {
+    height: 50px;
+    width: 150px;
+  }
+}
+
+.list {
+  padding-left: 0;
+  width: 300px;
+
+  li {
+    width: 100px;
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    span {
+      background-color: #595959;
+      color: #dedede;
+      align-content: center;
+      padding: 0 15px;
+      height: calc(100% - 8px);
+      margin-top: 4px;
+      border-radius: 0 5px 5px 0;
+    }
+
+    button {
+      display: none;
+      position: absolute;
+      background-color: transparent;
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      border: none;
+      left: -28px;
+      top: 12px;
+      width: 30px;
+    }
+
+    &:hover {
+      button {
+        display: block;
+      }
+    }
+  }
+
+  input[type='color'] {
+    height: 50px;
+    width: 400px;
+  }
+}
